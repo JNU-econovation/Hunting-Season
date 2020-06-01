@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class Entity : MonoBehaviour
 {
-    private int damage;
-    private float speed;
-    private int armour;
-    private int hp;
-    private int maxHp;
+    [SerializeField] private int damage;
+    [SerializeField] private float speed;
+    [SerializeField] private int armour;
+    [SerializeField] private int hp;
+    [SerializeField] private int maxHp;
     
+
+    public float GetSpeed()
+    {
+        return speed;
+    }
 }

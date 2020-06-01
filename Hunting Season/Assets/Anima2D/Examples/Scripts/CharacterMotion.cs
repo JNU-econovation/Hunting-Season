@@ -9,7 +9,7 @@ public class CharacterMotion : MonoBehaviour
 	{
 		animator = GetComponent<Animator>();
 	}
-
+    /*
 	void Update ()
 	{
 		float xAxis = Input.GetAxis("Horizontal");
@@ -28,4 +28,5 @@ public class CharacterMotion : MonoBehaviour
 
 		animator.SetFloat("Forward", Mathf.Abs(xAxis));
 	}
+    */
 }
