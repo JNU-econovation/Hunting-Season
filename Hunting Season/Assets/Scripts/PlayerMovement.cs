@@ -18,7 +18,7 @@ public class PlayerMovement : Player
     // Update is called once per frame
     void Update()
     {
-        
+        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -17.5f, 17.5f), transform.position.y, transform.position.z);
         if (Input.GetKey(KeyCode.A))
         {
             transform.Translate(Vector3.right * -1 * moveSpeed * Time.deltaTime);
