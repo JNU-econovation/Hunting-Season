@@ -15,7 +15,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - Player
   - 
   - 
   - 
@@ -48,6 +48,9 @@ TagManager:
     locked: 0
   - name: Map
     uniqueID: 2320286989
+    locked: 0
+  - name: Effect
+    uniqueID: 2983570437
     locked: 0
   - name: Player
     uniqueID: 4198492487
