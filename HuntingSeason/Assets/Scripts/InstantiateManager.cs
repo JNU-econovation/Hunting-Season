@@ -25,7 +25,7 @@ public class InstantiateManager : MonoBehaviour
     {
         portals = FindObjectsOfType<Portal>();
         if (isStart)
-            player = Instantiate(PlayerPrefab, new Vector3(20, -3.5f,0), Quaternion.identity);
+            player = Instantiate(PlayerPrefab, new Vector3(0, -23.5f,0), Quaternion.identity);
         else
             player = InstantiatePlayer();
         Camera.main.GetComponent<CameraController>().Target = player;

@@ -32,8 +32,10 @@ public class Swordman : PlayerController
 
         }
 
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, -8.2f, 28.5f), transform.position.y, transform.position.z);
-
+        if(SceneLoader.Instance.isBigMap)
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -28.2f, 47f), transform.position.y, transform.position.z);
+        else
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -28.2f, 8.5f), transform.position.y, transform.position.z);
 
 
     }
@@ -190,7 +192,6 @@ public class Swordman : PlayerController
             if (m_Anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 return;
 
-            print(currentJumpCount + " " + JumpCount);
             if (currentJumpCount < JumpCount)  // 0 , 1
             {
 

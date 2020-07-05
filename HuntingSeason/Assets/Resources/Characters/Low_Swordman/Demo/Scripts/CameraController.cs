@@ -19,9 +19,14 @@ public class CameraController : MonoBehaviour {
     {
         if (Target == null)
             return;
-        Vector3 Targetpos = new Vector3(Target.transform.position.x, Target.transform.position.y + PosY, -100);
+        Vector3 Targetpos = new Vector3(Target.transform.position.x, Target.transform.position.y + PosY, -10);
         transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * Smoothvalue);
-        transform.position = new Vector3(Mathf.Clamp(transform.position.x, 0, 20), Mathf.Clamp(transform.position.y, -1.2f, 10.8f), transform.position.z);
+
+        if(SceneLoader.Instance.isBigMap)
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -20, 40), Mathf.Clamp(transform.position.y, -21.2f, 0), transform.position.z);
+        else
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -20, 0), Mathf.Clamp(transform.position.y, -21.2f, 0), transform.position.z);
+
 
 
     }

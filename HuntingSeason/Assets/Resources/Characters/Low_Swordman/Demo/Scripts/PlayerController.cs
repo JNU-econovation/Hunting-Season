@@ -157,7 +157,7 @@ public abstract class PlayerController :MonoBehaviour
                 else
                 {
 
-                    Debug.Log("안부딪힘");
+                    //Debug.Log("안부딪힘");
 
                 }
 

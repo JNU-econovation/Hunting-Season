@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/B.unity
     guid: ba27cc7a70e58154f83437feff6179e1
+  - enabled: 1
+    path: Assets/Scenes/G.unity
+    guid: 3cc7f5eb499148345b691c52e35298f0
+  - enabled: 1
+    path: Assets/Scenes/Slum.unity
+    guid: 73c6b173f2e1829419f003f1008f694c
   m_configObjects: {}
