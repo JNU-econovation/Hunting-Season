@@ -22,8 +22,8 @@ public class CameraController : MonoBehaviour {
         Vector3 Targetpos = new Vector3(Target.transform.position.x, Target.transform.position.y + PosY, -10);
         transform.position = Vector3.Lerp(transform.position, Targetpos, Time.deltaTime * Smoothvalue);
 
-        if(SceneLoader.Instance.isBigMap)
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -20, 40), Mathf.Clamp(transform.position.y, -21.2f, 0), transform.position.z);
+        if(LevelLoader.Instance.isBigMap)
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -20, 37), Mathf.Clamp(transform.position.y, -21.2f, 0), transform.position.z);
         else
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, -20, 0), Mathf.Clamp(transform.position.y, -21.2f, 0), transform.position.z);
 

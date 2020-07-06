@@ -10,7 +10,7 @@ public class LevelLoader : MonoBehaviour
     public string preSceneName;
     public Animator transition;
     float transitionTime = 1f;
-
+    public bool isBigMap;
     private void Awake()
     {
         if (Instance == null)

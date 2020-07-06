@@ -31,8 +31,7 @@ public class Swordman : PlayerController
             m_rigidbody.velocity = new Vector2(m_rigidbody.velocity.x - 0.1f, m_rigidbody.velocity.y - 0.1f);
 
         }
-
-        if(SceneLoader.Instance.isBigMap)
+        if(LevelLoader.Instance.isBigMap)
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, -28.2f, 47f), transform.position.y, transform.position.z);
         else
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, -28.2f, 8.5f), transform.position.y, transform.position.z);

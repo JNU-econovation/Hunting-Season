@@ -18,13 +18,25 @@ public class TimeManager : MonoBehaviour
     private static TimeManager instance;
     [SerializeField] float time = 6;
     [SerializeField] float dayTime;
- 
+    public bool IsDay;
+    private int hour;
     void Update()
     {
         time += Time.deltaTime;
         if (time >= dayTime)
         {
             time = 0;
+        }
+        hour = (int)(time / dayTime * 24);
+        if (6 <= hour && hour < 18)
+        {
+            IsDay = true;
+            LightManager.Instance.SetDayLight();
+        }
+        else
+        {
+            IsDay = false;
+            LightManager.Instance.SetNightLight();
         }
     }
     public int GetHour()
