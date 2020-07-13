@@ -8,7 +8,7 @@ public class SystemBoot : MonoBehaviour
     private void Awake()
     {
         DontDestroyOnLoad(this);
-        SceneManager.LoadScene("B");
+        SceneManager.LoadScene("Urban Area");
     }
     void Start()
     {
