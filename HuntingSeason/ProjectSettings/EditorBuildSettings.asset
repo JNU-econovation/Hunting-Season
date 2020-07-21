@@ -93,7 +93,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Maps/D.unity
     guid: 1d18c639e11bb874a9cd58b6a675b7e6
   - enabled: 1
-    path: Assets/Scenes/Maps/Urban Area.unity
+    path: Assets/Scenes/Urban Area.unity
     guid: 8c712b4c8fbd9b94ebf6405816fcd3f1
   - enabled: 1
     path: Assets/Scenes/Maps/H.unity
