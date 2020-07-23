@@ -13,7 +13,7 @@ public class LevelManager : MonoBehaviour
     public GameObject player;
     private GameObject map1;
     private GameObject map2;
-    Vector3[] a_portalPoses ={ new Vector3(-50,-22.04f,0),new Vector3(-38, -22.04f, 0),new Vector3(-26, -22.04f, 0),new Vector3(-14, -22.04f, 0),
+    Vector3[] a_portalPoses ={ new Vector3(-50,-22.04f,0),new Vector3(-38, -22.04f, 0),new Vector3(-22, -22.04f, 0),new Vector3(-14, -22.04f, 0),
                 new Vector3(-2, -22.04f, 0),new Vector3(10, -22.04f, 0),new Vector3(24, -22.04f, 0)};
  
     private void Awake()

@@ -39,11 +39,11 @@ public class LightManager : MonoBehaviour
 
     IEnumerator TurnToDay()
     {
-        while (pointLight2D.pointLightOuterRadius < 60f && pointLight2D.pointLightInnerRadius < 56f)
+        while (pointLight2D.pointLightOuterRadius < 60f)
         {
             yield return null; 
-            pointLight2D.pointLightOuterRadius += Time.deltaTime;
-            pointLight2D.pointLightInnerRadius += Time.deltaTime;
+            pointLight2D.pointLightOuterRadius += Time.deltaTime * 0.8f;
+            pointLight2D.pointLightInnerRadius = pointLight2D.pointLightOuterRadius;
         }
 
         pointLight.SetActive(false);
@@ -55,11 +55,11 @@ public class LightManager : MonoBehaviour
         pointLight.SetActive(true);
         globalLight.SetActive(false);
 
-        while (pointLight2D.pointLightOuterRadius > 4f && pointLight2D.pointLightInnerRadius > 0f)
+        while (pointLight2D.pointLightOuterRadius > 4f)
         {
             yield return null;
-            pointLight2D.pointLightOuterRadius -= Time.deltaTime;
-            pointLight2D.pointLightInnerRadius -= Time.deltaTime;
+            pointLight2D.pointLightOuterRadius -= Time.deltaTime * 0.8f;
+            pointLight2D.pointLightInnerRadius = pointLight2D.pointLightOuterRadius;
         }
     }
 }

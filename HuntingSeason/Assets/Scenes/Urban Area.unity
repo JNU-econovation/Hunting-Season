@@ -128,24 +128,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 884395422678348893, guid: 1ea4cd210c97f604ab52e82f599beb7d,
-        type: 3}
-      propertyPath: mapPrefab
-      value: 
-      objectReference: {fileID: 7133644775216538648, guid: 0370529cb139116428c38772501cd318,
-        type: 3}
-    - target: {fileID: 884395422678348893, guid: 1ea4cd210c97f604ab52e82f599beb7d,
-        type: 3}
-      propertyPath: portalPrefab
-      value: 
-      objectReference: {fileID: 860229072346278367, guid: 1b7a6743e9e24ce478b02d322c26a2be,
-        type: 3}
-    - target: {fileID: 884395422678348893, guid: 1ea4cd210c97f604ab52e82f599beb7d,
-        type: 3}
-      propertyPath: playerPrefab
-      value: 
-      objectReference: {fileID: 8805574255041768996, guid: d9d3085871d4e13409ab2b0489dab1d6,
-        type: 3}
     - target: {fileID: 1749524049097724129, guid: 1ea4cd210c97f604ab52e82f599beb7d,
         type: 3}
       propertyPath: m_Name
@@ -618,6 +600,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
+    - target: {fileID: 7133644775216538648, guid: 0370529cb139116428c38772501cd318,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7133644775216538650, guid: 0370529cb139116428c38772501cd318,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -809,7 +796,7 @@ PrefabInstance:
     - target: {fileID: 7133644775216538648, guid: 0370529cb139116428c38772501cd318,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7133644775216538650, guid: 0370529cb139116428c38772501cd318,
         type: 3}
@@ -962,7 +949,7 @@ PrefabInstance:
     - target: {fileID: 860229072346278365, guid: 1b7a6743e9e24ce478b02d322c26a2be,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -26
+      value: -23
       objectReference: {fileID: 0}
     - target: {fileID: 860229072346278365, guid: 1b7a6743e9e24ce478b02d322c26a2be,
         type: 3}
@@ -1041,7 +1028,7 @@ PrefabInstance:
     - target: {fileID: 860229072346278365, guid: 1b7a6743e9e24ce478b02d322c26a2be,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14
+      value: -11.77
       objectReference: {fileID: 0}
     - target: {fileID: 860229072346278365, guid: 1b7a6743e9e24ce478b02d322c26a2be,
         type: 3}

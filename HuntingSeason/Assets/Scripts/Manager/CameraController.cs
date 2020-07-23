@@ -25,7 +25,7 @@ public class CameraController : MonoBehaviour {
         if(LevelLoader.Instance.isBigMap)
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, -42f, 16.6f), Mathf.Clamp(transform.position.y, -21.2f, 100), transform.position.z);
         else
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -42f, -21f), Mathf.Clamp(transform.position.y, -21.2f, 100), transform.position.z);
+            transform.position = new Vector3(Mathf.Clamp(transform.position.x, -42f, -21.8f), Mathf.Clamp(transform.position.y, -21.2f, 100), transform.position.z);
 
 
 

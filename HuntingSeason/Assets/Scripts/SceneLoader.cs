@@ -16,8 +16,7 @@ public class SceneLoader : MonoBehaviour
         }
     }
     private static SceneLoader instance;
-
     public string preSceneName;
-    
+
 }
 
